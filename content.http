@@ -1,0 +1,36 @@
+GET http://localhost:8080/api/content
+
+###
+GET http://localhost:8080/api/content
+
+### crete new contewnt
+POST http://localhost:8080/api/content
+Content-Type: application/json
+
+{
+  "id": 2,
+  "title": "post content",
+  "desc": "post generated content",
+  "status": "IDEA",
+  "contentType": "VIDEO",
+  "dateCreated": null  ,
+  "dateUpdated": null,
+  "url": ""
+}
+###
+PUT http://localhost:8080/api/content/1
+Content-Type: application/json
+
+{
+"id": 1,
+"title": "put content",
+"desc": "put generated content",
+"status": "IDEA",
+"contentType": "VIDEO",
+"dateCreated": null  ,
+"dateUpdated": null,
+"url": "put"
+}
+
+###
+DELETE http://localhost:8080/api/content/2
