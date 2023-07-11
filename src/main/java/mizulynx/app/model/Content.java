@@ -1,7 +1,6 @@
 package mizulynx.app.model;
 
 import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.NotEmpty;
 
 import java.time.LocalDateTime;
 
@@ -11,7 +10,7 @@ public record Content(
         String title,
         String desc,
         Type contentType,
-        Status status,
+        ContentStatus contentStatus,
 
         LocalDateTime dateCreated,
         LocalDateTime dateUpdated,

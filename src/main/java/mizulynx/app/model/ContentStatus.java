@@ -1,6 +1,6 @@
 package mizulynx.app.model;
 
-public enum Status {
+public enum ContentStatus {
     IDEA,
     IN_PROGRESS,
     COMPLETED,

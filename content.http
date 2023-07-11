@@ -8,14 +8,10 @@ POST http://localhost:8080/api/content
 Content-Type: application/json
 
 {
-  "id": 2,
   "title": "post content",
   "desc": "post generated content",
-  "status": "IDEA",
-  "contentType": "VIDEO",
-  "dateCreated": null  ,
-  "dateUpdated": null,
-  "url": ""
+  "status": "IDEA"
+
 }
 ###
 PUT http://localhost:8080/api/content/1
@@ -34,3 +30,22 @@ Content-Type: application/json
 
 ###
 DELETE http://localhost:8080/api/content/2
+
+###
+GET http://localhost:8080/user
+###
+POST http://localhost:8080/user/signup
+Content-Type: application/json
+
+{
+  "username": "kubus",
+  "password":"1234567"
+}
+###
+POST http://localhost:8080/user/signin
+Content-Type: application/json
+
+{
+  "username": "kubus",
+  "password":"1234567"
+}

@@ -2,7 +2,7 @@ package mizulynx.app.repository;
 
 import jakarta.annotation.PostConstruct;
 import mizulynx.app.model.Content;
-import mizulynx.app.model.Status;
+import mizulynx.app.model.ContentStatus;
 import mizulynx.app.model.Type;
 import org.springframework.stereotype.Repository;
 
@@ -30,7 +30,7 @@ public class ContentCollectionRepository {
                     "my first",
                     "describtion",
                     Type.ARTICLE,
-                    Status.IDEA,
+                    ContentStatus.IDEA,
                     LocalDateTime.now(),
                     null,
                     ""
